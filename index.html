@@ -3,78 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রফেশনাল লাইব্রেরি বারকোড জেনারেটর</title>
-    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-    
+    <title>যোগাযোগের তথ্য</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-box {
+            text-align: center;
+            padding: 20px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-<div class="no-print">
-    <h3 style="margin: 0 0 10px 0; text-align: center; font-size: 16px; line-height: 1.5; color: #333;">
-        যে কোন ধরনের<br> 
-        বারকোড ও কিউ আর কোড তৈরির<br> 
-        ওয়েব পেজ তৈরি করতে চাইলে যোগাযোগ করতে পারেন<br> 
-        <a href="" style="color: #007bff; text-decoration: none;">porimolcroy@gmail.com</a>
+<div class="center-box">
+    <h3>
+        যে কোন ধরনের<br>
+        বারকোড ও কিউ আর কোড তৈরির<br>
+        ওয়েব পেজ তৈরি করতে চাইলে যোগাযোগ করতে পারেন<br>
+        <a href="mailto:porimolcroy@gmail.com">porimolcroy@gmail.com</a>
     </h3>
 </div>
 
-<div id="barcode-grid" class="grid-container"></div>
-
-
-
-<!-- Inventor Modal 
-
-
-</script>
-    let count = 0;
-
-    function addNewField() {
-        count++;
-        const grid = document.getElementById('barcode-grid');
-        const div = document.createElement('div');
-        div.className = 'barcode-card';
-        div.id = `card-${count}`;
-        div.innerHTML = `
-            <input type="text" class="input-box no-print" id="barcode-input-${count}" placeholder="Barcode" oninput="drawBarcode(${count})" onkeydown="checkNextField(event, ${count})">
-            <svg id="barcode-svg-${count}"></svg>
-        `;
-        grid.appendChild(div);
-        document.getElementById(`barcode-input-${count}`).focus();
-    }
-
-    function drawBarcode(id) {
-        const value = document.getElementById(`barcode-input-${id}`).value;
-        const svg = document.getElementById(`barcode-svg-${id}`);
-        if (value.trim() !== "") {
-            JsBarcode(`#barcode-svg-${id}`, value, {
-                format: "CODE128",
-                width: 1.2,
-                height: 10,   
-                displayValue: true,
-                fontSize: 11,   
-                margin: 0
-            });
-        } else {
-            svg.innerHTML = "";
-        }
-    }
-
-    function checkNextField(event, id) { 
-        if (event.key === "Enter") {
-            event.preventDefault();
-            addNewField(); 
-        }
-    }
-
-    // Modal functions
-    function openInventorModal() {
-        document.getElementById('inventorModal').style.display = 'flex';
-    }
-
-    function closeInventorModal() {
-        document.getElementById('inventorModal').style.display = 'none';
-    }
-
-    window.onload = addNewField;
-</script>
 </body>
-    -->
 </html>
